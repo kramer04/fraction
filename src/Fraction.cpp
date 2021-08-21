@@ -83,5 +83,8 @@ void Fraction::calcul(std::vector<std::string> bloc)
 }
 void Fraction::afficher()
 {
+  std::cout << "--------------------------" << std::endl;
+  std::cout << "Résultat :" << std::endl;
   std::cout << m_num << "/" << m_den << std::endl;
+  std::cout << "--------------------------" << std::endl;
 }
