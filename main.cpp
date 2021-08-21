@@ -9,7 +9,6 @@ int main()
   
 
   fraction.calcul(fraction.extraction(entree));
-  std::cout << entree << " = ";
   fraction.afficher();
   
   return 0;
