@@ -1,5 +1,5 @@
 # fraction
-Donne le résultat sous forme simplifiée de l'addition et la soustraction d'une série de fractions.
+Donne le résultat sous forme simplifiée de l'addition et la soustraction d'une série de fractions composées de nombres entiers.
 
 ## pour compiler sous LINUX
 ```
