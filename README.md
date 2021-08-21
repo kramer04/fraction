@@ -2,7 +2,9 @@
 Donne le résultat sous forme simplifiée de l'addition et la soustraction d'une série de fractions.
 
 ## pour compiler sous LINUX
+```
 g++ -g main.cpp src/*.cpp -std=c++20 -I include -o main -Wall -Wextra -O2
+```
 
 ## Exemples
 ### Remarque importante : ne pas mettre d'espace
