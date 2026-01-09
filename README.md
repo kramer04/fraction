@@ -1,3 +1,5 @@
+![blablateam](https://user-images.githubusercontent.com/29018157/121679401-95be4500-cab8-11eb-9115-1afa99deb063.png)
+
 # fraction
 Donne le résultat sous forme simplifiée de l'addition, la soustraction, la multiplication et la division d'une série de fractions composées de nombres entiers.
 
