@@ -49,7 +49,7 @@ Resultat: 1
 </pre>
 
 <pre>
-  Entrer une expression:
+Entrer une expression:
 (45-12*4)/(35-7*(5/8)
 Erreur: Parenthese fermante ')' manquante (col 22)
 </pre>
@@ -61,7 +61,19 @@ Resultat: -24/245
 </pre>
 
 <pre>
-  Entrer une expression:
+Entrer une expression:
 -2/5+7/8
 Resultat: 19/40
+</pre>
+
+<pre>
+Entrer une expression:
++2/5+7/8
+Resultat: 51/40
+</pre>
+
+<pre>
+Entrer une expression:
+45*12
+Resultat: 540
 </pre>
