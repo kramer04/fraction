@@ -1,15 +1,24 @@
-#include "Fraction.h"
+#include <iostream>
+#include <string>
+
+#include "ExprParser.h"
 
 int main()
 {
-  Fraction fraction;
-  std::string entree;
-  std::cout << "Addition soustraction de fraction" << std::endl;
-  std::cin >> entree;
-  
+  std::cout << "Entrer une expression:\n";
+  std::string input;
+  std::getline(std::cin, input);
 
-  fraction.calcul(fraction.extraction(entree));
-  fraction.afficher();
-  
+  try
+  {
+    ExprParser p;
+    Fraction r = p.eval(input);
+    std::cout << "Resultat: " << r << "\n";
+  }
+  catch (const std::exception &e)
+  {
+    std::cout << "Erreur: " << e.what() << "\n";
+  }
   return 0;
 }
+// https://stackoverflow.com/questions/4654636/how-to-determine-if-a-string-is-a-number-with-c?page=1&tab=votes#tab-top
