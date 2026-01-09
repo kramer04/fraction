@@ -1,18 +1,29 @@
 #ifndef FRACTION_H
 #define FRACTION_H
 
-#include <iostream>
-#include <vector>
-#include <string>
+#include <iosfwd>
 
-class Fraction {
+class Fraction
+{
 public:
-  Fraction();
-  void afficher();
-  std::vector<std::string> extraction(std::string entree);
-  void calcul(std::vector<std::string> bloc);
+  Fraction(long long n = 0, long long d = 1);
+
+  long long num() const { return m_num; }
+  long long den() const { return m_den; }
+
+  void normalize(); // réduit + den>0 + checks
+
+  // opérateurs
+  friend Fraction operator+(const Fraction &a, const Fraction &b);
+  friend Fraction operator-(const Fraction &a, const Fraction &b);
+  friend Fraction operator*(const Fraction &a, const Fraction &b);
+  friend Fraction operator/(const Fraction &a, const Fraction &b);
+
+  friend std::ostream &operator<<(std::ostream &os, const Fraction &f);
+
 private:
-  int m_num, m_den;
+  long long m_num;
+  long long m_den;
 };
 
 #endif
